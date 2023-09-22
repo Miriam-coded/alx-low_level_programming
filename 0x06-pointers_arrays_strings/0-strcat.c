@@ -2,9 +2,10 @@
 
 /**
  * _strcat - function that concanates two strings
- * @src: will be appended to @dest
+ * @src: will be appended to
+ * @dest
  *
- * Return: apointer resuting string @dest
+ * Return: a pointer resuting string @dest
  */
 
 char *_strcat(char *dest, char *src)
@@ -16,7 +17,7 @@ char *_strcat(char *dest, char *src)
 		dest++;
 	}
 
-	while (*src !='\0')
+	while (*src != '\0')
 	{
 		*dest = *src;
 		dest++;
@@ -25,5 +26,5 @@ char *_strcat(char *dest, char *src)
 
 	*dest = '\0';
 
-	return string;
+	return (string);
 }
