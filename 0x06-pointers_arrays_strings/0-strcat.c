@@ -2,8 +2,8 @@
 
 /**
  * _strcat - function that concanates two strings
- * @src: will be appended to
- * @dest
+ * @dest:will be appended 
+ * @src: will be concanated 
  *
  * Return: a pointer resuting string @dest
  */
