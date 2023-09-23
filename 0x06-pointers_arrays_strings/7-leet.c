@@ -7,22 +7,20 @@
  */
 char *leet(char *s)
 {
-	char *ptr = str;
-	char leet_old[] = "AaEeOoTtLl";
-	char leet_new[] = "4433007711";
+	char alphaArr[] = "a4A4e3E3o0O0t7T7l1L1";
+	int i;
+	int j;
 
-	while (*str)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (int i = 0; leet_old[i] != '\0'; i++)
+		for (j = 0; alphaArr[j] != '\0'; j++)
 		{
-			if (*str == leet_old[i])
+			if (s[i] == alphaArr[j])
 			{
-				*str = leet_new[i];
-			break;
+				s[i] = alphaArr[j + 1];
+				break;
 			}
 		}
-	str++;
 	}
-
-	return (ptr);
+	return (s);
 }
