@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _abs - returns absolute value of an image
+ * _abs - returns absolute value of an integer
  * @n: integer from which to get the absolute value from
  *
- * return: Void
+ * Return: n if int is greater than 1
  */
 
 int _abs(int n)
