@@ -23,12 +23,15 @@ void print_all(const char * const format, ...)
 		{
 			case 'c':
 				printf("%s%c", sep, va_arg(args, int));
+				sep = ", ";
 				break;
 			case 'i':
 				printf("%s%d", sep, va_arg(args, int));
+				sep = ", ";
 				break;
 			case 'f':
 				printf("%s%f", sep, va_arg(args, double));
+				sep = ", ";
 				break;
 			case 's':
 				{
@@ -38,13 +41,13 @@ void print_all(const char * const format, ...)
 						printf("%s(nil)", sep);
 					else
 						printf("%s%s", sep, str);
+					sep = ", ";
 				}
 				break;
 			default:
 				sep = "";
 				break;
 		}
-		sep = ", ";
 		i++;
 	}
 
