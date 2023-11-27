@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * main - starts
+ * @_putchar: print _putchar
+ *
+ * Reuturn: 0
+ */
+
 int main(void)
 {
 	_putchar('_');
