@@ -4,7 +4,7 @@
  * main - starts
  * @_putchar: print _putchar
  *
- * Reuturn: 0
+ * Return: 0
  */
 
 int main(void)
