@@ -2,27 +2,27 @@
 #include "main.h"
 
 /**
- * print_sign - function that prints the sign of a number
+ * print_sign - prints the sign of a n
  * @n: is the number
  *
- * Return: 1 if +, -1 if - and 0 of zero
+ * Return: 1 if n > 0, 0 if n = 0, -1 if n < 0
  */
 
 int print_sign(int n)
 {
 	if (n > 0)
 	{
-		printf("+");
+		_putchar('+');
 		return (1);
 	}
 	else if (n < 0)
 	{
-		printf("-");
+		_putchar('-');
 		return (-1);
 	}
 	else
 	{
-		printf("0");
+		_putchar('0');
 		return (0);
 	}
 }
