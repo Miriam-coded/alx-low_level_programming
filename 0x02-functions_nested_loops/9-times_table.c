@@ -18,7 +18,14 @@ void times_table(void)
 		{
 			int ans = i * j;
 
-			printf("%d, ", ans);
+			if (j == 0)
+			{
+				printf("%d", ans);
+			}
+			else
+			{
+				printf(", %2d", ans);
+			}
 		}
 		printf("\n");
 	}
