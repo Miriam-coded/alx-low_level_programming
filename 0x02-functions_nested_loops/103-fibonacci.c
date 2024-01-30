@@ -14,7 +14,7 @@ int main(void)
 	two = 2.0;
 	next = 0.0;
 
-	for (next = 0; next <= 4000000; next + 2)
+	for (next = 0; next <= 4000000; next++)
 	{
 		if ((int)next % 2 == 0)
 		{
