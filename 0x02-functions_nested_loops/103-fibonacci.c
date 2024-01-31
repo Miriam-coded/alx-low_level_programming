@@ -8,24 +8,24 @@
 
 int main(void)
 {
-	double one, two, next;
+	long int one, two, sum, next;
 
-	one = 0.0;
-	two = 2.0;
-	next = 0.0;
+	one = 1;
+	two = 2;
+	sum = 0;
 
-	for (next = 0; next <= 4000000; next++)
+	while (two <= 4000000)
 	{
-		if ((int)next % 2 == 0)
+		if (two % 2 == 0)
 		{
-			printf("%.0f, ", next);
+			sum += two;
 		}
 
+		next = one + two;
 		one = two;
 		two = next;
-		next = one + two;
 	}
 
-	printf("\n");
+	printf("%ld\n", sum);
 	return (0);
 }
