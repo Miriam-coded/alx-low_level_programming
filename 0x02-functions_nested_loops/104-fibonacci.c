@@ -16,7 +16,7 @@ int main(void)
 	count = 0;
 
 	do {
-		printf("%.0f", one);
+		printf("%.0f, %.0f", one, two);
 
 		if (count < 96)
 		{
