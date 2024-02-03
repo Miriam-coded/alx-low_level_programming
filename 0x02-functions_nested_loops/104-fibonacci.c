@@ -8,25 +8,25 @@
 
 int main(void)
 {
-	double one, two;
-	int count;
+	unsigned long int one, two, next, count;
 
 	one = 1.0;
 	two = 2.0;
-	count = 0;
 
-	do {
-		printf("%.0f, %.0f", one, two);
+	for (count = 0; count < 98; count++)
+	{
+		printf("%lu", one);
 
-		if (count < 96)
+		if (count != 97)
 		{
 			printf(", ");
 		}
 
-		one = one + two;
-		two = two + one;
-		count = count + 2;
-	} while (count < 98);
+		next = one + two;
+		one = two;
+		two = next;
+	}
+
 
 	printf("\n");
 	return (0);
