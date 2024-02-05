@@ -2,6 +2,7 @@
 
 /**
  * positive_or_negative - checks if integer is positive or negative
+ * @i: the number to check
  *
  * Return: Always 0 (Success)
  */
