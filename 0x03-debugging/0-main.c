@@ -1,4 +1,4 @@
-#include "main..h"
+#include "main.h"
 
 /**
  * main - tests function if integer is 0
