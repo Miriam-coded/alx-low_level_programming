@@ -5,7 +5,7 @@
  * main - multiplies 2 numbers
  * @argc: number of arguments
  * @argv: array of arguments
- * 
+ *
  * Return: multiple of the numbers if argc == 3
  * else returns 1 and print Error
  */
