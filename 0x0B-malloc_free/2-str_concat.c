@@ -1,6 +1,6 @@
 #include <stdlib.h>
 /**
- * str_conca - concatenates s1 and s2
+ * str_concat - concatenates s1 and s2
  * @s1: string to concatenante
  * @s2: another string to concatenate
  *
@@ -38,6 +38,6 @@ char *str_concat(char *s1, char *s2)
 		concat_str[i + j] = s2[j];
 
 	concat_str[i + j] = '\0';
-	
+
 	return (concat_str);
 }
